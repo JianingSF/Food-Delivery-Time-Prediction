@@ -6,12 +6,18 @@ The target problem can be defined as a regression problem for prediction based o
     * buildModel.py: Run experiments
 
 **Part1: Build Models**
+
       * Run dataPrepare.sh to re-split historical_data.csv into train_data.csv and validation_data.csv. (You will get different split each time considering data shuffle during split)
       * Run dataManager.py to build models, the new model will be saved after training for prediction.
       
 **Part2: Prediction Output**
+
 Three input parameters of prediction.py:
+
   * predictionData: .json file to predict
   * savedModel: saved model and normalization parameters from the part one
   * predictionResult: .tsv file of prediction output
+  
 Output will be saved with columns of delivery_id and  predicted_delivery_seconds.
+
+
